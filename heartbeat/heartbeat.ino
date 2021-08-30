@@ -1,14 +1,11 @@
-/* heartbeat
- *
- * output simple hello message
- *
- */
-int x = 0;
+int count = 0;
 void setup() {
+  Serial.begin(9600);
 }
 
 void loop() {
-  Serial.print(x);
-  Serial.println("sec have elapsed");
+  count++;
+  Serial.print(count);
+  Serial.println(" secs have passed");
   Serial.delay(1000);
 }
