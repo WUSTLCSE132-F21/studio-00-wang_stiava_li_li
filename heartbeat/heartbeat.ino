@@ -3,12 +3,12 @@
  * output simple hello message
  *
  */
-
+int x = 0;
 void setup() {
 }
 
 void loop() {
-  Serial.begin(9600);
+  Serial.print(x);
   Serial.println("sec have elapsed");
   Serial.delay(1000);
 }
