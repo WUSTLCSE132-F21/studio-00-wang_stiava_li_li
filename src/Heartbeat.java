@@ -7,6 +7,7 @@ public class Heartbeat {
 			try {
 				System.out.println(count+" seconds have passed");
 				count++;
+				
 				Thread.sleep(1000);
 			} catch (Exception e) {
 				// TODO: handle exception
